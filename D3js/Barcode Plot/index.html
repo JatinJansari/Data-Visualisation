@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="widt=device-width, initial-scale=1">
+        <script type="text/javascript" src="http://mbostock.github.com/d3/d3.js"></script>
+        <title>Barcode Chart</title>
+    </head>
+    <body>
+        <script>
+            var barcodeChart = function() {
+                // Definition of the chart variables
+                var width = 600,
+                    height = 30;
+                
+                // Charting function
+                function chart(selection) {
+                    selection.each(function(data) {
+                        
+                        // Select the SVG elements and bind it to a single element dataset
+                        var div = d3.select(this),
+                            svg = div.selectAll('svg').data([data]);
+                        
+                    })
+                }
+            }
+        </script>
+    </body>
+</html>
